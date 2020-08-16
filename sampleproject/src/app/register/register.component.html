@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tutor Register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="/assets/css/style.css">
+
+		
+	</head>
+
+	<body>
+
+			<div class="inner">
+				<div class="image-holder">
+					<img src="/assets/images/registration-form-1.jpg" alt="">
+				</div>
+				<form #userForm="ngForm" (ngSubmit)="onSave(userForm.value)" novalidate>
+					<h3>Register </h3>
+
+						<div class="form-wrapper">
+						<input type="text" name="username" [(ngModel)]="username" placeholder="Username" class="form-control">
+						<i class="zmdi zmdi-account zmdi-hc-lg"></i>
+					</div>
+					
+					<div class="form-wrapper">
+						<input type="text" name="email" [(ngModel)]="email" placeholder="Email Address" class="form-control">
+						<i class="zmdi zmdi-email zmdi-hc-lg"></i>
+					</div>
+					
+
+					<div class="form-wrapper">
+						<input type="password" name="password" [(ngModel)]="password" placeholder="Password" class="form-control">
+						<i class="zmdi zmdi-lock zmdi-hc-lg"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" name="conpassword" [(ngModel)]="conpassword" placeholder="Confirm Password" class="form-control">
+						<i class="zmdi zmdi-lock zmdi-hc-lg"></i>
+					</div>
+					
+                    
+                    
+					<button value="{{valbutton}}">Register
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

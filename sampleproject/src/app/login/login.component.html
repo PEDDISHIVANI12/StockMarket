@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tutor Register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" href="/assets/css/style.css">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+		
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="modal fade" id="empModel">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<span class="close" data-dismiss="modal">&times;</span>
+							<h4 class="modal-title">Update Form</h4>
+						</div>
+						<div class="modal-body">
+							<form class="form-group">
+								<div class="container">
+									<div class="row">
+									  <div class="col-sm-2">
+										<h5>NSE</h5>
+										<h4><b>NIFTY 50</b></h4>
+										<h2><b>11,325.10</b></h2>
+									  </div>
+									  <div class="col-sm-2">
+										<br/>
+										
+										
+										<p>Prev Close</p>
+										<p><b>11,300.10</b></p>
+									  </div>
+									  
+									</div>
+								  </div>
+								  <nav class="navbar navbar-dark bg-dark"> 
+										  <a class="navbar-brand" style="height:10px"> 
+										</a> 
+									  </nav> 
+									 
+							</form>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="inner">
+				<div class="image-holder">
+					<img src="/assets/images/registration-form-1.jpg" alt="">
+				</div>
+				<form >
+					<h3>Login</h3>
+
+						<div class="form-wrapper">
+						<input type="text" name="login_email" [(ngModel)]="login_email" placeholder="Enter Your Email" class="form-control">
+						<i class="zmdi zmdi-account zmdi-hc-lg"></i>
+					</div>
+					
+					
+					<div class="form-wrapper">
+						<input type="password" name="login_password" [(ngModel)]="login_password" placeholder="Enter Your Password" class="form-control">
+						<i class="zmdi zmdi-lock zmdi-hc-lg"></i>
+					</div>
+					
+                    
+                    
+					<button (click) = "login()">Login
+						<i class="zmdi zmdi-arrow-right"></i>
+                    </button>
+                    <br/>
+                    <a class="nav-link" routerLink="register">Register</a>
+				</form>
+			</div>
+			</div>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
